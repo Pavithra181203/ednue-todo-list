@@ -1,0 +1,2 @@
+# excluding java compilation files
+*.class
