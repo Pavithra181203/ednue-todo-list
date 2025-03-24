@@ -85,13 +85,17 @@ public class TaskManager {
         }
     }
     public void displayTasks() {
-        System.out.println("\n--- Current Tasks ---");
+        System.out.println("\n Current Task");
         if (tasks.isEmpty()) System.out.println("No pending tasks!");
         for (Task task : tasks) System.out.println(task);
 
-        System.out.println("\n--- Completed Tasks ---");
-        if (completedTasks.isEmpty()) System.out.println("No completed tasks!");
-        for (Task task : completedTasks) System.out.println(task);
+        System.out.println("\n Completed Tasks ");
+        if (completedTasks.isEmpty()){
+            System.out.println("No completed tasks!");
+        }
+        for (Task task : completedTasks){
+            System.out.println(task);
+        }
     }
 }
 
