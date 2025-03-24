@@ -7,7 +7,7 @@ import java.io.*;
 public class TaskManager {
     private ArrayList<Task> tasks = new ArrayList<>();
     private LinkedList<Task> completedTasks = new LinkedList<>();
-    private HashMap<Integer,Task> taskMap=new HashMap<>();
+    private HashMap<Integer,Task> taskMap = new HashMap<>();
     String FILE_NAME="tasks.data";
 
     public void addTask(Task task){
@@ -81,7 +81,7 @@ public class TaskManager {
             for (Task task : completedTasks) taskMap.put(task.taskID, task);
             System.out.println("Tasks loaded successfully!");
         } catch (IOException | ClassNotFoundException e) {
-            System.out.println("No saved tasks found.");
+            System.out.println("No saved tasks found");
         }
     }
     public void displayTasks() {
