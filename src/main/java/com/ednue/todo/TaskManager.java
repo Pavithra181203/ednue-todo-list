@@ -39,7 +39,7 @@ public class TaskManager {
         if(task!=null){
             tasks.remove(task);
             taskMap.remove(taskID);
-            System.out.println("Task removed succesfully!");
+            System.out.println("Task removed successfully!");
         }
         else{
             System.out.println("Task not found!");
@@ -72,7 +72,7 @@ public class TaskManager {
         }
     }
 
-    @SuppressWarnings("unchecked")
+    /*@SuppressWarnings("unchecked")
     public void loadTasksFromFile() {
         try (ObjectInputStream in = new ObjectInputStream(new FileInputStream(FILE_NAME))) {
             tasks = (ArrayList<Task>) in.readObject();
@@ -84,6 +84,8 @@ public class TaskManager {
             System.out.println("No saved tasks found");
         }
     }
+
+     */
     public void displayTasks() {
         System.out.println("\n Current Task");
         if (tasks.isEmpty()) System.out.println("No pending tasks!");

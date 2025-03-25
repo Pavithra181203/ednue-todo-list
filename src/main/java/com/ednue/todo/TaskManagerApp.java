@@ -5,7 +5,7 @@ public class TaskManagerApp {
     public static void main(String[] args) {
         Scanner s=new Scanner(System.in);
         TaskManager taskManager=new TaskManager();
-        taskManager.loadTasksFromFile();
+       // taskManager.loadTasksFromFile();
 
         ReminderThread reminderThread=new ReminderThread(taskManager);
         reminderThread.setDaemon(true);
